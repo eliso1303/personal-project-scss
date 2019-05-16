@@ -1,0 +1,39 @@
+.services {
+
+    > div {
+        width: 300px;
+        padding-top: 37px;
+
+        h2 {
+            margin-bottom: 9px;
+            font-size: 27px;
+            line-height: 30px;
+        }
+
+        .design {
+            margin-bottom: 50px;
+        }
+
+        .service-items {
+            display: grid;
+            grid-gap: 40px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+
+            .service-item {
+                padding-top: 172px;
+                background-position: 50% 58px, 50% 0;
+
+                h3 {
+                    font-size: 19px;
+                    line-height: 37px;
+                }
+
+                p {
+                    font-size: 13px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+}

@@ -2,7 +2,6 @@
     background: $col-7;
 
     > div {
-        // width: 1173px;
         width: 1277px;
         margin: auto;
         padding-top: 141px;
@@ -55,12 +54,12 @@
 
             .service-item {
                 padding-top: 179px;
-                background: url(../images/services/graphchart.png) no-repeat, url(../images/services/Polygon1.png) no-repeat;
+                background: url(/images/services/graphchart.png) no-repeat, url(/images/services/Polygon1.png) no-repeat;
                 background-position: 49% 59px, 50% 0;
                 text-align: center;
 
                 &:hover {
-                    background: url(../images/services/graphchart.png) no-repeat, url(../images/services/Group1.png) no-repeat;
+                    background: url(/images/services/graphchart.png) no-repeat, url(/images/services/Group1.png) no-repeat;
                     background-position: 49% 59px, 50% 0;
                 }
 
@@ -83,24 +82,24 @@
 
                 &.visitors {
                     padding-top: 179px;
-                    background: url(../images/services/VisitorIcon.png) no-repeat, url(../images/services/Polygon1.png) no-repeat;
+                    background: url(/images/services/VisitorIcon.png) no-repeat, url(/images/services/Polygon1.png) no-repeat;
                     background-position: 49% 62px, 50% 0;
                     text-align: center;
 
                     &:hover {
-                        background: url(../images/services/VisitorIcon.png) no-repeat, url(../images/services/Group1.png) no-repeat;
+                        background: url(/images/services/VisitorIcon.png) no-repeat, url(/images/services/Group1.png) no-repeat;
                         background-position: 49% 59px, 50% 0;
                     }
                 }
 
                 &.sales {
                     padding-top: 179px;
-                    background: url(../images/services/increase.png) no-repeat, url(../images/services/Polygon1.png) no-repeat;
+                    background: url(/images/services/increase.png) no-repeat, url(/images/services/Polygon1.png) no-repeat;
                     background-position: 49% 62px, 50% 0;
                     text-align: center;
 
                     &:hover {
-                        background: url(../images/services/increase.png) no-repeat, url(../images/services/Group1.png) no-repeat;
+                        background: url(/images/services/increase.png) no-repeat, url(/images/services/Group1.png) no-repeat;
                         background-position: 49% 59px, 50% 0;
                     }
                 }

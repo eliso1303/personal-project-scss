@@ -14,16 +14,14 @@
             display: block;
             padding: 50px 0 0;
 
-            div {
+            > div:first-child {
+                width: 718px;
+                height: 421px;
+                text-align: center;
 
                 img {
-                    height: 421px;
                     margin-right: 0;
                 }
-            }
-
-            div:first-child {
-                text-align: center;
             }
 
             .about-us-text {

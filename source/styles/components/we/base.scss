@@ -53,9 +53,12 @@
             justify-content: center;
             padding: 94px 5px 0;
 
-            img {
+            > div:first-child {
                 height: 402px;
-                margin-right: 91px;
+
+                img {
+                    margin-right: 91px;
+                }
             }
 
             .about-us-text {
@@ -99,7 +102,7 @@
                             height: 63px;
                             margin-right: 28px;
                             border-radius: 50%;
-                            background: $col-5 url(../images/we/settings.png) no-repeat;
+                            background: $col-5 url(/images/we/settings.png) no-repeat;
                             background-position: 50%;
                         }
 
@@ -122,7 +125,7 @@
                         &.two {
 
                             &::before {
-                                background: $col-5 url(../images/we/location.png) no-repeat;
+                                background: $col-5 url(/images/we/location.png) no-repeat;
                                 background-position: 50%;
                             }
                         }
@@ -130,7 +133,7 @@
                         &.three {
 
                             &::before {
-                                background: $col-5 url(../images/we/heart.png) no-repeat;
+                                background: $col-5 url(/images/we/heart.png) no-repeat;
                                 background-position: 50%;
                             }
                         }
@@ -138,7 +141,7 @@
                         &.four {
 
                             &::before {
-                                background: $col-5 url(../images/we/new.png) no-repeat;
+                                background: $col-5 url(/images/we/new.png) no-repeat;
                                 background-position: 50%;
                             }
                         }
