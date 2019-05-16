@@ -2,7 +2,7 @@
 
     > div {
         width: 718px;
-        padding-top: 71px;
+        padding-top: 70px;
 
         h2 {
             margin-left: 3px;
@@ -14,10 +14,97 @@
             display: block;
             padding: 50px 0 0;
 
-            img {
-                width: 100%;
-                height: 421px;
-                margin-right: 91px;
+            div {
+
+                img {
+                    height: 421px;
+                    margin-right: 0;
+                }
+            }
+
+            div:first-child {
+                text-align: center;
+            }
+
+            .about-us-text {
+                text-align: left;
+
+                h3 {
+                    margin-top: 34px;
+                    margin-bottom: 17px;
+                    padding-bottom: 22px;
+                    border-bottom: 1px solid $col-11;
+                    font-size: 25px;
+                    line-height: 19px;
+                }
+
+                p {
+                    font-size: 13px;
+                    line-height: 27px;
+                }
+
+                .features {
+                    display: grid;
+                    grid-row-gap: 26px;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    margin-top: 52px;
+
+                    .feature {
+                        text-align: left;
+
+                        &::before {
+                            content: '';
+                            display: flex;
+                            flex-shrink: 0;
+                            align-items: center;
+                            justify-content: center;
+                            width: 17px;
+                            height: 40px;
+                            margin-right: 15px;
+                            border-radius: 0;
+                            background: url(../images/we/CheckIcon1.png) no-repeat;
+                            background-position: 1px 5px;
+                        }
+
+                        &.two::before,
+                        &.three::before,
+                        &.four::before {
+                            width: 17px;
+                            height: 40px;
+                            margin-right: 15px;
+                            background: url(../images/we/CheckIcon1.png) no-repeat;
+                            background-position: 1px 5px;
+                        }
+
+                        div {
+                            text-align: left;
+
+                            h4 {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .four {
+                        display: none;
+                    }
+                }
+
+                .read-more {
+                    display: inline-block;
+                    margin-top: 50px;
+
+                    a {
+                        padding: 13px 32px;
+                        background: $col-2;
+                        color: $col-4;
+                        font-size: 13px;
+                        font-weight: 700;
+                        line-height: 34px;
+                        text-decoration: none;
+                    }
+                }
             }
         }
     }

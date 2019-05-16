@@ -142,6 +142,10 @@
                                 background-position: 50%;
                             }
                         }
+
+                        &.read-more {
+                            display: none;
+                        }
                     }
                 }
             }
