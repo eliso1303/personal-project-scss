@@ -1,3 +1,23 @@
 .header {
-    background: green;
+
+    .wrap {
+        width: 718px;
+        padding: 23px 0 31px;
+
+        .menu {
+            display: none;
+        }
+
+        .burger-menu {
+            display: inline-block;
+
+            a {
+                display: inline-block;
+
+                img {
+                    padding-top: 13px;
+                }
+            }
+        }
+    }
 }

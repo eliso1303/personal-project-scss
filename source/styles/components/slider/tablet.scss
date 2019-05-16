@@ -1,0 +1,38 @@
+.slider {
+    min-height: 580px;
+    overflow: hidden;
+
+    img {
+        width: 115.9%;
+    }
+
+    .caption {
+        top: 47%;
+
+        h2 {
+            top: 10px;
+            margin-left: -1px;
+            font-size: 58px;
+            line-height: 70px;
+            word-spacing: 1px;
+        }
+
+        h3 {
+            margin-right: 9px;
+            font-size: 71px;
+            line-height: 86px;
+        }
+
+        p {
+            left: -15px;
+            margin-bottom: 50px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        div {
+            top: -10px;
+            left: -4px;
+        }
+    }
+}

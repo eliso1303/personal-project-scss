@@ -1,0 +1,150 @@
+.we {
+
+    > div {
+        width: 1188px;
+        margin: auto;
+        padding-top: 112px;
+        padding-bottom: 139px;
+
+        h2 {
+            margin-bottom: 12px;
+            color: $col-1;
+            font-size: 31px;
+            font-weight: 600;
+            line-height: 34px;
+            text-align: center;
+            word-spacing: -1px;
+
+            span {
+                color: $col-2;
+            }
+        }
+
+        .design {
+            text-align: center;
+
+            span {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 8px;
+                    left: 22px;
+                    width: 37px;
+                    height: 1px;
+                    background: $col-6;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 8px;
+                    right: 26px;
+                    width: 37px;
+                    height: 1px;
+                    background: $col-6;
+                }
+            }
+        }
+
+        .about-us {
+            display: flex;
+            justify-content: center;
+            padding: 94px 5px 0;
+
+            img {
+                height: 402px;
+                margin-right: 91px;
+            }
+
+            .about-us-text {
+
+                h3 {
+                    margin-top: 4px;
+                    margin-bottom: 30px;
+                    color: $col-1;
+                    font-size: 31px;
+                    font-weight: 600;
+                    letter-spacing: -.5px;
+                    line-height: 19px;
+                    word-spacing: -1.8px;
+                }
+
+                p {
+                    color: $col-3;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 14px;
+                    line-height: 27px;
+                }
+
+                .features {
+                    display: grid;
+                    grid-gap: 43px;
+                    grid-row-gap: 51px;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    margin-top: 47px;
+
+                    .feature {
+                        display: flex;
+
+                        &::before {
+                            content: '';
+                            display: flex;
+                            flex-shrink: 0;
+                            align-items: center;
+                            justify-content: center;
+                            width: 63px;
+                            height: 63px;
+                            margin-right: 28px;
+                            border-radius: 50%;
+                            background: $col-5 url(../images/we/settings.png) no-repeat;
+                            background-position: 50%;
+                        }
+
+                        h4 {
+                            margin-top: 1px;
+                            margin-bottom: 10px;
+                            font-size: 18px;
+                            font-weight: 900;
+                            letter-spacing: -.5px;
+                            line-height: 19px;
+                            word-spacing: 1px;
+                        }
+
+                        p {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 13px;
+                            line-height: 22px;
+                        }
+
+                        &.two {
+
+                            &::before {
+                                background: $col-5 url(../images/we/location.png) no-repeat;
+                                background-position: 50%;
+                            }
+                        }
+
+                        &.three {
+
+                            &::before {
+                                background: $col-5 url(../images/we/heart.png) no-repeat;
+                                background-position: 50%;
+                            }
+                        }
+
+                        &.four {
+
+                            &::before {
+                                background: $col-5 url(../images/we/new.png) no-repeat;
+                                background-position: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,31 @@
 .header {
-    background: yellow;
+
+    .wrap {
+        width: 280px;
+        min-height: 64px;
+        padding: 11px 1px 14px;
+
+        .logo {
+
+            img {
+                width: 92px;
+            }
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .burger-menu {
+            display: inline-block;
+
+            a {
+
+                img {
+                    width: 45px;
+                    padding-top: 7px;
+                }
+            }
+        }
+    }
 }

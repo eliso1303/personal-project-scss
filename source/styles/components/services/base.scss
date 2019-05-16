@@ -1,0 +1,110 @@
+.services {
+    background: $col-7;
+
+    > div {
+        // width: 1173px;
+        width: 1277px;
+        margin: auto;
+        padding-top: 141px;
+        padding-bottom: 151px;
+
+        h2 {
+            margin-bottom: 5px;
+            color: $col-8;
+            font-size: 31px;
+            font-weight: 600;
+            line-height: 34px;
+            text-align: center;
+            word-spacing: -1px;
+        }
+
+        .design {
+            margin-bottom: 140px;
+            text-align: center;
+
+            span {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 6px;
+                    left: 28px;
+                    width: 37px;
+                    height: 1px;
+                    background: $col-6;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 6px;
+                    right: 29px;
+                    width: 37px;
+                    height: 1px;
+                    background: $col-6;
+                }
+            }
+        }
+
+        .service-items {
+            display: grid;
+            grid-gap: 40px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+
+            .service-item {
+                padding-top: 179px;
+                background: url(../images/services/graphchart.png) no-repeat, url(../images/services/Polygon1.png) no-repeat;
+                background-position: 49% 59px, 50% 0;
+                text-align: center;
+
+                &:hover {
+                    background: url(../images/services/graphchart.png) no-repeat, url(../images/services/Group1.png) no-repeat;
+                    background-position: 49% 59px, 50% 0;
+                }
+
+                h3 {
+                    margin-bottom: 5px;
+                    color: $col-2;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 40px;
+                }
+
+                p {
+                    width: 300px;
+                    margin: auto;
+                    color: $col-4;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+
+                &.visitors {
+                    padding-top: 179px;
+                    background: url(../images/services/VisitorIcon.png) no-repeat, url(../images/services/Polygon1.png) no-repeat;
+                    background-position: 49% 62px, 50% 0;
+                    text-align: center;
+
+                    &:hover {
+                        background: url(../images/services/VisitorIcon.png) no-repeat, url(../images/services/Group1.png) no-repeat;
+                        background-position: 49% 59px, 50% 0;
+                    }
+                }
+
+                &.sales {
+                    padding-top: 179px;
+                    background: url(../images/services/increase.png) no-repeat, url(../images/services/Polygon1.png) no-repeat;
+                    background-position: 49% 62px, 50% 0;
+                    text-align: center;
+
+                    &:hover {
+                        background: url(../images/services/increase.png) no-repeat, url(../images/services/Group1.png) no-repeat;
+                        background-position: 49% 59px, 50% 0;
+                    }
+                }
+            }
+        }
+    }
+}
