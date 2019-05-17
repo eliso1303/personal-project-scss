@@ -33,8 +33,12 @@
         > div {
             height: 229px;
 
-            &:nth-child(7) {
-                display: none;
+            &.col,
+            &.col-2 {
+
+                &:nth-child(7) {
+                    display: none;
+                }
             }
 
             > div {
@@ -52,15 +56,16 @@
                     }
 
                     .portfolio-caption {
+                        padding-top: 9px;
 
                         h3 {
                             font-size: 12px;
-                            line-height: 22px;
+                            line-height: 27px;
                         }
 
                         p {
                             font-size: 10px;
-                            line-height: 22px;
+                            line-height: 6px;
                         }
                     }
                 }

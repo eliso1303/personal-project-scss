@@ -1,6 +1,6 @@
 .slider {
     position: relative;
-    max-height: 500px;
+    height: 592px;
     overflow: hidden;
 
     img {
@@ -8,7 +8,7 @@
     }
 
     .caption {
-        top: 47%;
+        top: 43%;
 
         h2 {
             top: 10px;
@@ -26,13 +26,12 @@
 
         p {
             left: -15px;
-            margin-bottom: 50px;
             font-size: 18px;
             line-height: 22px;
         }
 
         div {
-            top: -11px;
+            top: 38px;
             left: -4px;
         }
     }

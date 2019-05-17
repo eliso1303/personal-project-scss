@@ -82,14 +82,27 @@
             grid-template-rows: repeat(1, 1fr);
 
             .service-item {
+                position: relative;
                 padding-top: 179px;
-                background: url(/images/services/diagram.png) no-repeat;
-                background-position: 50% 0;
                 text-align: center;
 
-                &:hover {
+                &::before {
+                    content: '';
+                    display: flex;
+                    position: absolute;
+                    top: 74px;
+                    left: 51%;
+                    flex-shrink: 0;
+                    align-items: center;
+                    justify-content: center;
+                    width: 135px;
+                    height: 143px;
+                    transform: translate(-50%, -50%);
+                    background: url(/images/services/diagram.png) no-repeat;
+                }
+
+                &:hover::before {
                     background: url(/images/services/diagram-hover.png) no-repeat;
-                    background-position: 50% 0;
                 }
 
                 h3 {
@@ -111,25 +124,25 @@
 
                 &.visitors {
                     padding-top: 179px;
-                    background: url(/images/services/visitors.png) no-repeat;
-                    background-position: 50% 0;
-                    text-align: center;
 
-                    &:hover {
+                    &::before {
+                        background: url(/images/services/visitors.png) no-repeat;
+                    }
+
+                    &:hover::before {
                         background: url(/images/services/visitors-hover.png) no-repeat;
-                        background-position: 50% 0;
                     }
                 }
 
                 &.sales {
                     padding-top: 179px;
-                    background: url(/images/services/sales.png) no-repeat;
-                    background-position: 50% 0;
-                    text-align: center;
 
-                    &:hover {
+                    &::before {
+                        background: url(/images/services/sales.png) no-repeat;
+                    }
+
+                    &:hover::before {
                         background: url(/images/services/sales-hover.png) no-repeat;
-                        background-position: 50% 0;
                     }
                 }
             }

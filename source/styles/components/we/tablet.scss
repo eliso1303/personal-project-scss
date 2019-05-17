@@ -2,7 +2,8 @@
 
     > div {
         width: 718px;
-        padding-top: 70px;
+        padding-top: 74px;
+        padding-bottom: 79px;
 
         h2 {
             margin-bottom: 34px;
@@ -42,7 +43,8 @@
                     line-height: 19px;
                 }
 
-                p {
+                > p {
+                    margin-bottom: 52px;
                     font-size: 13px;
                     line-height: 27px;
                 }
@@ -52,7 +54,6 @@
                     grid-row-gap: 26px;
                     grid-template-columns: repeat(1, 1fr);
                     grid-template-rows: repeat(3, 1fr);
-                    margin-top: 52px;
 
                     .feature {
                         text-align: left;
@@ -87,6 +88,10 @@
                             h4 {
                                 display: none;
                             }
+
+                            p {
+                                margin-bottom: 17px;
+                            }
                         }
                     }
 
@@ -97,7 +102,7 @@
 
                 .read-more {
                     display: inline-block;
-                    margin-top: 50px;
+                    margin-top: 51px;
 
                     a {
                         padding: 13px 32px;
