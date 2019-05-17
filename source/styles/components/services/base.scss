@@ -2,19 +2,48 @@
     background: $col-7;
 
     > div {
-        width: 1277px;
+        width: 1173px;
         margin: auto;
         padding-top: 141px;
         padding-bottom: 151px;
 
         h2 {
-            margin-bottom: 5px;
+            position: relative;
+            margin-bottom: 167px;
             color: $col-8;
             font-size: 31px;
             font-weight: 600;
             line-height: 34px;
             text-align: center;
             word-spacing: -1px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50px;
+                left: 50%;
+                width: 104px;
+                height: 1px;
+                transform: translate(-50%, -50%);
+                background: $col-6;
+            }
+
+            &::after {
+                content: '';
+                display: flex;
+                position: absolute;
+                top: 48px;
+                left: 50%;
+                flex-shrink: 0;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                margin-right: 28px;
+                transform: translate(-50%, -50%);
+                background: $col-7 url(/images/services/services.png) no-repeat;
+                background-position: 50%;
+            }
         }
 
         .design {
@@ -54,13 +83,13 @@
 
             .service-item {
                 padding-top: 179px;
-                background: url(/images/services/graphchart.png) no-repeat, url(/images/services/Polygon1.png) no-repeat;
-                background-position: 49% 59px, 50% 0;
+                background: url(/images/services/diagram.png) no-repeat;
+                background-position: 50% 0;
                 text-align: center;
 
                 &:hover {
-                    background: url(/images/services/graphchart.png) no-repeat, url(/images/services/Group1.png) no-repeat;
-                    background-position: 49% 59px, 50% 0;
+                    background: url(/images/services/diagram-hover.png) no-repeat;
+                    background-position: 50% 0;
                 }
 
                 h3 {
@@ -82,25 +111,25 @@
 
                 &.visitors {
                     padding-top: 179px;
-                    background: url(/images/services/VisitorIcon.png) no-repeat, url(/images/services/Polygon1.png) no-repeat;
-                    background-position: 49% 62px, 50% 0;
+                    background: url(/images/services/visitors.png) no-repeat;
+                    background-position: 50% 0;
                     text-align: center;
 
                     &:hover {
-                        background: url(/images/services/VisitorIcon.png) no-repeat, url(/images/services/Group1.png) no-repeat;
-                        background-position: 49% 59px, 50% 0;
+                        background: url(/images/services/visitors-hover.png) no-repeat;
+                        background-position: 50% 0;
                     }
                 }
 
                 &.sales {
                     padding-top: 179px;
-                    background: url(/images/services/increase.png) no-repeat, url(/images/services/Polygon1.png) no-repeat;
-                    background-position: 49% 62px, 50% 0;
+                    background: url(/images/services/sales.png) no-repeat;
+                    background-position: 50% 0;
                     text-align: center;
 
                     &:hover {
-                        background: url(/images/services/increase.png) no-repeat, url(/images/services/Group1.png) no-repeat;
-                        background-position: 49% 59px, 50% 0;
+                        background: url(/images/services/sales-hover.png) no-repeat;
+                        background-position: 50% 0;
                     }
                 }
             }

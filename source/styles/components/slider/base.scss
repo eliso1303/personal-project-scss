@@ -1,10 +1,10 @@
 .slider {
     position: relative;
-    min-height: 761px;
+    max-height: 762px;
+    overflow: hidden;
 
     img {
         width: 100%;
-        max-height: 761px;
     }
 
     .caption {
@@ -69,5 +69,25 @@
                 text-decoration: none;
             }
         }
+    }
+
+    .arr-left {
+        position: absolute;
+        top: 44%;
+        left: 32px;
+        width: 50px;
+        height: 50px;
+        background-image: url(/images/slider/left.png);
+        background-repeat: no-repeat;
+    }
+
+    .arr-right {
+        position: absolute;
+        top: 44%;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+        background-image: url(/images/slider/right.png);
+        background-repeat: no-repeat;
     }
 }

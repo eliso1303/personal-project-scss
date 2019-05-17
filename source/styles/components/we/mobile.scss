@@ -5,10 +5,18 @@
         padding-top: 34px;
 
         h2 {
-            margin-bottom: 9px;
+            margin-bottom: 28px;
             margin-left: 3px;
             font-size: 27px;
             line-height: 30px;
+
+            &::before {
+                top: 49px;
+            }
+
+            &::after {
+                top: 47px;
+            }
         }
 
         .about-us {
@@ -18,11 +26,11 @@
             > div:first-child {
                 width: 280px;
                 height: 207px;
+                margin-right: 0;
                 text-align: center;
 
                 img {
                     max-height: 207px;
-                    margin-right: 0;
                 }
             }
 
@@ -64,7 +72,7 @@
                             height: 40px;
                             margin-right: 15px;
                             border-radius: 0;
-                            background: url(../images/we/CheckIcon1.png) no-repeat;
+                            background: url(/images/we/check-icon1.png) no-repeat;
                             background-position: 1px 5px;
                         }
 
@@ -74,7 +82,7 @@
                             width: 17px;
                             height: 40px;
                             margin-right: 15px;
-                            background: url(../images/we/CheckIcon1.png) no-repeat;
+                            background: url(/images/we/check-icon1.png) no-repeat;
                             background-position: 1px 5px;
                         }
 

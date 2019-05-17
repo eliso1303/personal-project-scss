@@ -7,7 +7,8 @@
         padding-bottom: 139px;
 
         h2 {
-            margin-bottom: 12px;
+            position: relative;
+            margin-bottom: 32px;
             color: $col-1;
             font-size: 31px;
             font-weight: 600;
@@ -18,33 +19,33 @@
             span {
                 color: $col-2;
             }
-        }
 
-        .design {
-            text-align: center;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 57px;
+                left: 50%;
+                width: 104px;
+                height: 1px;
+                transform: translate(-50%, -50%);
+                background: $col-6;
+            }
 
-            span {
-                position: relative;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 8px;
-                    left: 22px;
-                    width: 37px;
-                    height: 1px;
-                    background: $col-6;
-                }
-
-                &::after {
-                    content: '';
-                    position: absolute;
-                    top: 8px;
-                    right: 26px;
-                    width: 37px;
-                    height: 1px;
-                    background: $col-6;
-                }
+            &::after {
+                content: '';
+                display: flex;
+                position: absolute;
+                top: 54px;
+                left: 50%;
+                flex-shrink: 0;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                margin-right: 28px;
+                transform: translate(-50%, -50%);
+                background: $col-4 url(/images/we/speak-icon.png) no-repeat;
+                background-position: 50%;
             }
         }
 
@@ -55,10 +56,7 @@
 
             > div:first-child {
                 height: 402px;
-
-                img {
-                    margin-right: 91px;
-                }
+                margin-right: 91px;
             }
 
             .about-us-text {
@@ -145,11 +143,11 @@
                                 background-position: 50%;
                             }
                         }
-
-                        &.read-more {
-                            display: none;
-                        }
                     }
+                }
+
+                .read-more {
+                    display: none;
                 }
             }
         }

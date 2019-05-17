@@ -1,0 +1,47 @@
+.services {
+
+    > div {
+        width: 300px;
+        padding-top: 74px;
+
+        h2 {
+            margin-bottom: 95px;
+            font-size: 27px;
+            letter-spacing: .9px;
+            line-height: 30px;
+
+            &::before {
+                top: 52px;
+            }
+
+            &::after {
+                top: 53px;
+            }
+        }
+
+        .design {
+            margin-bottom: 50px;
+        }
+
+        .service-items {
+            display: grid;
+            grid-gap: 40px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+
+            .service-item {
+                padding-top: 172px;
+
+                h3 {
+                    font-size: 19px;
+                    line-height: 37px;
+                }
+
+                p {
+                    font-size: 13px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.we {
+
+    > div {
+        width: 970px;
+
+        .about-us {
+
+            > div:first-child {
+                margin-right: 44px;
+
+                img {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}

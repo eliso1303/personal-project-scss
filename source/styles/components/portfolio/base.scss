@@ -1,0 +1,144 @@
+.portfolio {
+    padding-top: 108px;
+    padding-bottom: 25px;
+
+    h2 {
+        position: relative;
+        margin-bottom: 110px;
+        color: $col-1;
+        font-size: 31px;
+        font-weight: 600;
+        line-height: 34px;
+        text-align: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 53px;
+            left: 51%;
+            width: 104px;
+            height: 1px;
+            transform: translate(-50%, -50%);
+            background: $col-6;
+        }
+
+        &::after {
+            content: '';
+            display: flex;
+            position: absolute;
+            top: 48px;
+            left: 50%;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            margin-right: 28px;
+            transform: translate(-50%, -50%);
+            background: $col-4 url(/images/portfolio/portfolio.png) no-repeat;
+            background-position: 50%;
+        }
+    }
+
+    .portfolio-items {
+        display: grid;
+        grid-gap: 7px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        .col {
+            grid-column: 2fr;
+
+            &-2 {
+                grid-column: span 2;
+            }
+        }
+
+        > div {
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            height: 379px;
+            background: $col-12;
+
+            &:hover {
+                background: $col-13;
+
+                a,
+                .portfolio-caption {
+                    display: none;
+                }
+
+                a {
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 11px;
+
+                    &::before {
+                        content: '';
+                        display: flex;
+                        flex-shrink: 0;
+                        align-items: center;
+                        justify-content: center;
+                        width: 46px;
+                        height: 46px;
+                        margin-right: 28px;
+                        border: 2px solid $col-2;
+                        border-radius: 50%;
+                        background: url(/images/portfolio/eye.png) no-repeat;
+                        background-position: 50%;
+                    }
+
+                    &:hover {
+                        border-radius: 50%;
+                        background: $col-2 url(/images/portfolio/eye.png) no-repeat;
+                        background-position: 50%;
+                    }
+
+                    &:nth-child(2) {
+                        margin-right: 0;
+
+                        &:hover {
+                            border-radius: 50%;
+                            background: $col-2 url(/images/portfolio/link.png) no-repeat;
+                            background-position: 50%;
+                        }
+                    }
+
+                    &:nth-child(2)::before {
+                        background: url(/images/portfolio/link.png) no-repeat;
+                        background-position: 50%;
+                    }
+                }
+
+                .portfolio-caption {
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 16px;
+                    background: $col-12;
+                    text-align: center;
+
+                    h3 {
+                        color: $col-4;
+                        font-size: 17px;
+                        font-weight: 600;
+                        line-height: 29px;
+                    }
+
+                    p {
+                        color: $col-2;
+                        font-size: 13px;
+                        font-style: italic;
+                        font-weight: 600;
+                        line-height: 29px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
 .slider {
-    min-height: 580px;
+    position: relative;
+    max-height: 500px;
     overflow: hidden;
 
     img {
@@ -34,5 +35,9 @@
             top: -11px;
             left: -4px;
         }
+    }
+
+    .slider-arrows {
+        display: none;
     }
 }

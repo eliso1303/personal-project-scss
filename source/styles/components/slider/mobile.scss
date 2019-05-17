@@ -1,5 +1,6 @@
 .slider {
-    min-height: 215px;
+    position: relative;
+    max-height: 215px;
     overflow: hidden;
 
     img {
@@ -40,5 +41,9 @@
                 font-size: 7px;
             }
         }
+    }
+
+    .slider-arrows {
+        display: none;
     }
 }

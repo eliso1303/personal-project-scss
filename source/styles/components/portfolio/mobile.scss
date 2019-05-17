@@ -1,0 +1,68 @@
+.portfolio {
+    padding-right: 19px;
+    padding-left: 19px;
+
+    h2 {
+        margin-bottom: 61px;
+        font-size: 27px;
+        line-height: 30px;
+
+        &::before {
+            top: 50px;
+        }
+
+        &::after {
+            top: 48px;
+        }
+    }
+
+    .portfolio-items {
+        grid-gap: 7px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        .col {
+            grid-column: 1fr;
+
+            &-2 {
+                grid-column: span 1;
+            }
+        }
+
+        > div {
+            height: 163px;
+
+            &:hover {
+
+                a {
+                    width: 30px;
+                    height: 30px;
+
+                    &::before {
+                        width: 26px;
+                        height: 26px;
+                        background-size: 12px;
+                    }
+
+                    &:nth-child(2)::before {
+                        background-size: 12px;
+                    }
+                }
+
+                .portfolio-caption {
+                    padding: 3px;
+
+                    h3 {
+                        font-size: 12px;
+                        line-height: 22px;
+                    }
+
+                    p {
+                        font-size: 11px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
