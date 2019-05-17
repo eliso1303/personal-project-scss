@@ -1,4 +1,5 @@
 .portfolio {
+    padding-top: 38px;
     padding-right: 19px;
     padding-left: 19px;
 
@@ -32,34 +33,43 @@
         > div {
             height: 163px;
 
-            &:hover {
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7) {
+                display: none;
+            }
 
-                a {
-                    width: 30px;
-                    height: 30px;
+            div {
 
-                    &::before {
-                        width: 26px;
-                        height: 26px;
-                        background-size: 12px;
+                &:hover {
+
+                    a {
+                        width: 30px;
+                        height: 30px;
+
+                        &::before {
+                            width: 26px;
+                            height: 26px;
+                            background-size: 12px;
+                        }
+
+                        &:nth-child(2)::before {
+                            background-size: 12px;
+                        }
                     }
 
-                    &:nth-child(2)::before {
-                        background-size: 12px;
-                    }
-                }
+                    .portfolio-caption {
+                        padding: 3px;
 
-                .portfolio-caption {
-                    padding: 3px;
+                        h3 {
+                            font-size: 12px;
+                            line-height: 22px;
+                        }
 
-                    h3 {
-                        font-size: 12px;
-                        line-height: 22px;
-                    }
-
-                    p {
-                        font-size: 11px;
-                        line-height: 26px;
+                        p {
+                            font-size: 11px;
+                            line-height: 26px;
+                        }
                     }
                 }
             }

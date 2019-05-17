@@ -42,7 +42,6 @@
                 justify-content: center;
                 width: 32px;
                 height: 32px;
-                margin-right: 28px;
                 transform: translate(-50%, -50%);
                 background: $col-4 url(/images/we/speak-icon.png) no-repeat;
                 background-position: 50%;
@@ -120,27 +119,16 @@
                             line-height: 22px;
                         }
 
-                        &.two {
+                        $after-images: ('two': 'location','three':'heart','four':'new');
 
-                            &::before {
-                                background: $col-5 url(/images/we/location.png) no-repeat;
-                                background-position: 50%;
-                            }
-                        }
+                        @each $class, $image in $after-images {
 
-                        &.three {
+                            &.#{$class} {
 
-                            &::before {
-                                background: $col-5 url(/images/we/heart.png) no-repeat;
-                                background-position: 50%;
-                            }
-                        }
-
-                        &.four {
-
-                            &::before {
-                                background: $col-5 url(/images/we/new.png) no-repeat;
-                                background-position: 50%;
+                                &::before {
+                                    background: $col-5 url(/images/we/#{$image}.png) no-repeat;
+                                    background-position: 50%;
+                                }
                             }
                         }
                     }

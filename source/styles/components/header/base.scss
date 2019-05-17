@@ -11,19 +11,15 @@
 
         .menu {
 
-            li {
-                display: inline-block;
+            a {
                 margin-right: 34.2px;
-
-                a {
-                    color: $col-4;
-                    font-family: 'Open Sans', sans-serif;
-                    font-size: 14px;
-                    font-weight: 400;
-                    letter-spacing: .2px;
-                    list-style: none;
-                    text-decoration: none;
-                }
+                color: $col-4;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: .2px;
+                list-style: none;
+                text-decoration: none;
 
                 &:last-child {
                     margin-right: 4px;

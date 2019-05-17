@@ -33,28 +33,35 @@
         > div {
             height: 229px;
 
-            &:hover {
+            &:nth-child(7) {
+                display: none;
+            }
 
-                a {
-                    width: 40px;
-                    height: 40px;
+            > div {
 
-                    &::before {
-                        width: 37px;
-                        height: 37px;
+                &:hover {
+
+                    a {
+                        width: 40px;
+                        height: 40px;
+
+                        &::before {
+                            width: 37px;
+                            height: 37px;
+                        }
                     }
-                }
 
-                .portfolio-caption {
+                    .portfolio-caption {
 
-                    h3 {
-                        font-size: 12px;
-                        line-height: 22px;
-                    }
+                        h3 {
+                            font-size: 12px;
+                            line-height: 22px;
+                        }
 
-                    p {
-                        font-size: 10px;
-                        line-height: 22px;
+                        p {
+                            font-size: 10px;
+                            line-height: 22px;
+                        }
                     }
                 }
             }
