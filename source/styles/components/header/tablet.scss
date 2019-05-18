@@ -4,6 +4,16 @@
         width: 718px;
         padding: 23px 0 31px;
 
+        .logo {
+
+            a {
+
+                &::before {
+                    top: 3px;
+                }
+            }
+        }
+
         .menu {
             display: none;
         }

@@ -9,6 +9,30 @@
         min-height: 101px;
         margin: 0 auto;
 
+        .logo {
+
+            a {
+                display: inline-block;
+                position: relative;
+                padding-top: 13px;
+                padding-left: 25px;
+                color: $col-4;
+                font-size: 37px;
+                font-weight: 300;
+                text-decoration: none;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50px;
+                    height: 100px;
+                    background: url(/images/header/logo.png) no-repeat;
+                }
+            }
+        }
+
         .menu {
 
             a {

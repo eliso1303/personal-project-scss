@@ -7,8 +7,17 @@
 
         .logo {
 
-            img {
-                width: 92px;
+            a {
+                padding-top: 10px;
+                padding-left: 20px;
+                font-size: 27px;
+
+                &::before {
+                    top: 2px;
+                    width: 21px;
+                    height: 30px;
+                    background-size: 21px;
+                }
             }
         }
 
